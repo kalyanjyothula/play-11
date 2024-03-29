@@ -1,3 +1,10 @@
+const fs = require('fs');
+const path = require('path');
+
+const prettierOptions = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, '.prettierrc'), 'utf8'),
+);
+
 module.exports = {
   env: {
     browser: true,
@@ -25,6 +32,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'prettier/prettier': ['error', prettierOptions],
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'no-unused-vars': ['error', { argsIgnorePattern: 'props|action|state' }],
@@ -33,5 +41,6 @@ module.exports = {
       'error',
       { ignorePropertyModificationsFor: ['state'] },
     ],
+    'require-yield': 0,
   },
 };
