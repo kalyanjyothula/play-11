@@ -1,4 +1,3 @@
 module.exports = {
-    poppins: ['Poppins', 'sans-serif'],
-  };
-  
+  poppins: ['Poppins', 'sans-serif'],
+};

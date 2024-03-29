@@ -1,12 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+// import PropTypes from 'prop-types';
+import Header from '../../components/Header';
 
-const HomePage = props => {
+function HomePage(props) {
   return (
-    <div className='text-3xl text-red-700 text-h3'>HomePage</div>
-  )
+    <div>
+      <Header />
+    </div>
+  );
 }
 
-HomePage.propTypes = {}
+HomePage.propTypes = {};
 
-export default HomePage
+export default HomePage;

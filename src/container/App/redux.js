@@ -8,8 +8,9 @@ const AppReducer = createSlice({
     increment: (state, action) => {
       state.count += 1;
     },
+    getMatches: () => {},
   },
 });
 
-export const { getUser, increment } = AppReducer.actions;
+export const { getUser, increment, getMatches } = AppReducer.actions;
 export default AppReducer.reducer;

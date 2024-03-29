@@ -1,6 +1,8 @@
-import { combineReducers } from "@reduxjs/toolkit";
-import AppReducer from "../container/App/redux";
+import { combineReducers } from '@reduxjs/toolkit';
+import AppReducer from '../container/App/redux';
 
-export const reducer = combineReducers({
-    App: AppReducer,
-  });
+const reducer = combineReducers({
+  App: AppReducer,
+});
+
+export default reducer;
